@@ -13,7 +13,7 @@ export default function Layout({
     <main>
       <TopNav show={showMenu} setShow={setShowMenu} />
       <Sidebar show={showMenu} setShow={setShowMenu} />
-      {children}
+      <div className="md:ml-64 mt-12 md:m-0 p-4 h-screen">{children}</div>
     </main>
   );
 }
