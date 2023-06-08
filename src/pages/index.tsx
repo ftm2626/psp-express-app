@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Layout from "src/components/Layout";
 
 const Home: NextPage = () => {
   return (
@@ -9,14 +10,9 @@ const Home: NextPage = () => {
         <meta name="description" content="PSP Express App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <h1 className="text-3xl font-bold underline text-red-700">
-          Hello world!
-        </h1>
-      </main>
-
-      <footer></footer>
+      <Layout>
+        <></>
+      </Layout>
     </div>
   );
 };
