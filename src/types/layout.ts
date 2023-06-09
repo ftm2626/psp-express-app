@@ -3,6 +3,7 @@ import { Dispatch, SetStateAction } from "react";
 export type layoutPropT = {
   show: boolean;
   setShow: Dispatch<SetStateAction<boolean>>;
+  privilege?: string;
 };
 
 export type menuItemPropT = {
