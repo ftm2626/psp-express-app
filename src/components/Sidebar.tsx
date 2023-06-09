@@ -5,6 +5,7 @@ import { layoutPropT } from "src/types/layout";
 import MenuItem from "./MenuItem";
 
 export default function Sidebar({ show }: layoutPropT): JSX.Element {
+  
   return (
     <aside
       id="default-sidebar"
@@ -20,13 +21,16 @@ export default function Sidebar({ show }: layoutPropT): JSX.Element {
             link="/list"
             icon={<DashboardSvg className="text-xl text-gray-500" />}
           />
-          <MenuItem
-            text="SignUp"
-            link="/singup"
-            icon={<SignupSvg className="text-xl text-gray-500" />}
-          />
+          {/* {privilage == "2" && ( */}
+            <MenuItem
+              text="Setting"
+              link="/setting"
+              icon={<SignupSvg className="text-xl text-gray-500" />}
+            />
+          {/* )} */}
         </ul>
       </div>
     </aside>
   );
 }
+

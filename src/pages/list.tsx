@@ -6,7 +6,7 @@ import ListLoading from "src/components/ListLoading";
 import { getQueryApiFn } from "src/logic/reactQueryApi";
 import { postApiResT } from "src/types/apis";
 
-const Home: NextPage = () => {
+const List: NextPage = () => {
   const { isLoading, error, data } = useQuery(
     ["posts"],
     getQueryApiFn<postApiResT[]>
@@ -24,4 +24,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default List;
