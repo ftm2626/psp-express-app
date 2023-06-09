@@ -1,11 +1,4 @@
-import axios, { AxiosResponse } from "axios";
-// export const InternalError = {
-//   message: "Internal error during request.",
-//   code: -500,
-// };
-
-// export const onFulfilledRequest = (response: AxiosResponse) => response;
-// export const onRejectedResponse = (): any => Promise.reject(InternalError);
+import axios from "axios";
 
 const API_URL = "https://jsonplaceholder.typicode.com/";
 
@@ -30,13 +23,6 @@ publicRequest.interceptors.response.use(
 );
 publicRequest.interceptors.request.use(
   (config) => {
-    // const token = Cookies.get('propiy_token');
-    // if (config != undefined && config.headers != undefined) {
-    //   config.headers['Accept'] = 'application/json';
-    //   if (token) {
-    //     config.headers['Authorization'] = 'Bearer ' + token;
-    //   }
-    // }
     return config;
   },
   (error) => {
